@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/outline_report_problem_24"
+        android:title="Report" />
+    <item
+        android:id="@+id/nav_breakdown"
+        android:icon="@drawable/ic_baseline_gps_fixed_24"
+        android:title="Breakdown" />
+
+</menu>

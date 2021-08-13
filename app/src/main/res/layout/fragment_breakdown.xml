@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Breakdown.BreakdownFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Building Defect"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeOne"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/style_spinner">
+
+            <Spinner
+                android:id="@+id/breakdown_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_arrow_drop_down_circle_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bd_textView"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:id="@+id/viewOne"
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/fOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewOne"
+                android:layout_toStartOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="Component"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bd_component"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="Cement Cracking"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bd_component"
+                android:layout_toStartOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:gravity="right"
+                android:text="Defect"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bd_defect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_component"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="Crack"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_defect"
+                android:layout_toStartOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:gravity="right"
+                android:text="Length"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/bd_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_defect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="5 CM"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_length"
+                android:layout_toStartOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="Date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bd_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_length"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="30/5/2021"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_date"
+                android:layout_toStartOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="Priority"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bd_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_date"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/viewOne"
+                android:fontFamily="@font/berlin_sans_fb_regular"
+                android:text="HIGH"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/breakdown_contact"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            android:text="Contact Supplier"/>
+
+        <Button
+            android:id="@+id/breakdown_resolution"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_warning"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Defect Resolution"/>
+
+    </LinearLayout>
+</FrameLayout>
